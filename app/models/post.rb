@@ -6,7 +6,7 @@ class Post
 
   attr_reader :slug
 
-  FILENAME_FORMAT = /^(\d+-\d+-\d+)-(.*)(\.[^.]+)$/
+  FILENAME_FORMAT = /^(\d+-\d+-\d+-\d+)-(.*)(\.[^.]+)$/
 
   def initialize(path)
     @path = path
@@ -53,7 +53,7 @@ class Post
   end
 
   def date
-    @date ||= Time.zone.parse(metadata[:date] || @date_str).to_date
+    @date ||= DateTime.strptime(metadata[:date] || @date_str, '%Y-%m-%d-%H%M%S')
   end
 
   delegate :year, :month, :day, :to => :date
