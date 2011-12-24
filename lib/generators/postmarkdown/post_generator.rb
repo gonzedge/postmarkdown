@@ -1,6 +1,6 @@
 module Postmarkdown
   class PostGenerator < Rails::Generators::Base
-    desc File.read(File.expand_path('../usage/post.txt', __FILE__)).gsub('{{CURRENT_DATE}}', Time.zone.now.strftime('%Y-%m-%d'))
+    desc File.read(File.expand_path('../usage/post.txt', __FILE__)).gsub('{{CURRENT_DATE}}', DateTime.now.utc.strftime('%Y-%m-%d-%H%M%S'))
     source_root File.expand_path('../templates', __FILE__)
     argument :slug, :type => :string, :required => true
     class_option :date, :type => :string, :group => :runtime, :desc => 'Publish date for the post'
@@ -13,8 +13,8 @@ module Postmarkdown
     end
 
     def check_date
-      if options.date && options.date !~ /^\d{4}-\d{2}-\d{2}$/
-        puts 'Invalid date - please use the following format: YYYY-MM-DD, eg. 2011-01-01.'
+      if options.date && options.date !~ /^\d{4}-\d{2}-\d{2}-\d{4}$/
+        puts 'Invalid date - please use the following format: YYYY-MM-DD-HHMMSS, eg. 2011-01-01-100000.'
         exit
       end
     end
@@ -26,8 +26,8 @@ module Postmarkdown
     private
 
     def publish_date
-      date = options.date.present? ? Time.zone.parse(options.date) : Time.zone.now
-      date.strftime('%Y-%m-%d')
+      date = options.date.present? ? DateTime.strptime(options.date, '%Y-%m-%d-%H%M%S') : DateTime.now.utc
+      date.strftime('%Y-%m-%d-%H%M%S')
     end
   end
 end
