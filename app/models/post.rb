@@ -22,6 +22,10 @@ class Post
     end
   end
 
+  def filename
+    @path.split("/").last
+  end
+
   def permalink_format
     Postmarkdown::Config.options[:permalink_format]
   end
