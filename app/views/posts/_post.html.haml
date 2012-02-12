@@ -1,6 +1,6 @@
 %article{id: 'post_'+post.id, class: 'post'}
   %header
-    %h1= link_to post.title, posts_path(post.permalink_format)
+    %h1= link_to post.title, posts_path(post.to_param)
     = image_tag post.gravatar_url(:size => 32, :default => 'identicon'), :height => 32, :width => 32
     .meta
       %time{:pubdate => 'true', :datetime => post.timestamp.iso8601}
@@ -10,6 +10,6 @@
         = post.author
   - if summary
     = post.summary_html
-    %p.more= link_to 'Read more&hellip;'.html_safe, posts_path(post.permalink_format)
+    %p.more= link_to 'Read more&hellip;'.html_safe, posts_path(post.to_param)
   - else
     ~ post.content_html
