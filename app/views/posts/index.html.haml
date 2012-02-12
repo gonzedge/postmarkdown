@@ -2,6 +2,7 @@
 
 %section#posts
   - if collection.present?
-    = render collection, :summary => true
+    - collection.each do |item|
+      = render partial: "posts/post", locals: {post: item, summary: true}
   - else
     No posts found.

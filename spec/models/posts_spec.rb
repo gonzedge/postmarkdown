@@ -5,13 +5,6 @@ describe Post do
     Post.new(File.dirname(__FILE__) + "/../support/data/posts/#{file_name}")
   end
 
-  describe 'when asked for its model name' do
-    it 'should return the correct model name' do
-      Post.model_name.should == 'Post'
-    end
-  end
-
-
   it 'should not initialise with bad filename' do
     lambda { test_post 'missing-date-from-filename.markdown' }.should raise_error
   end

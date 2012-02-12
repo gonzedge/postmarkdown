@@ -1,10 +1,9 @@
 class Post
-  extend ActiveModel::Naming
-
   include Gravtastic
   is_gravtastic
 
   attr_reader :slug
+  alias_method :id, :slug
 
   FILENAME_FORMAT = /^(\d+-\d+-\d+-\d+)-(.*)(\.[^.]+)$/
 
@@ -12,6 +11,12 @@ class Post
     @path = path
     @date_str, @slug = File.basename(path).match(FILENAME_FORMAT).captures
   end
+
+=begin
+  def to_partial_path
+    'posts/post'
+  end
+=end
 
   def to_param
     case permalink_format
