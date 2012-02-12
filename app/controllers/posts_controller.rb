@@ -23,5 +23,6 @@ class PostsController < ApplicationController
   def collection
     @collection ||= Post.where(params.slice(:year, :month, :day))
   end
+
   helper_method :collection
 end

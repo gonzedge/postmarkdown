@@ -1,5 +1,6 @@
 ENV['RAILS_ENV'] ||= 'test'
 
+require 'rails'
 require 'rubygems'
 require 'bundler'
 Bundler.setup :default, :development

@@ -15,10 +15,14 @@ class Post
 
   def to_param
     case permalink_format
-    when :day   then "%04d/%02d/%02d/%s" % [year, month, day, slug]
-    when :month then "%04d/%02d/%s" % [year, month, slug]
-    when :year  then "%04d/%s" % [year, slug]
-    when :slug  then slug
+      when :day then
+        "%04d/%02d/%02d/%s" % [year, month, day, slug]
+      when :month then
+        "%04d/%02d/%s" % [year, month, slug]
+      when :year then
+        "%04d/%s" % [year, slug]
+      when :slug then
+        slug
     end
   end
 
@@ -65,6 +69,7 @@ class Post
   def timestamp
     date.to_time_in_current_zone
   end
+
   alias_method :last_modified, :timestamp
 
   def visible?

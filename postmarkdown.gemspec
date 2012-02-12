@@ -21,15 +21,17 @@ Gem::Specification.new do |s|
   s.executables   = `git ls-files -- bin/*`.split("\n").map{ |f| File.basename(f) }
   s.require_paths = ['lib', 'public']
 
-  s.add_dependency 'rails', '~> 3.0'
-  s.add_dependency 'haml', '~> 3.1'
+  s.add_dependency 'rails'
+  s.add_dependency 'rails3-generators'
+  s.add_dependency 'haml'
   s.add_dependency 'gravtastic'
   s.add_dependency 'nokogiri'
   s.add_dependency 'rdiscount'
 
   s.add_development_dependency 'appraisal'
-  s.add_development_dependency 'rspec-rails', '~> 2.5'
-  s.add_development_dependency 'capybara', '~> 1.0.0.beta'
+  s.add_development_dependency 'combustion'
+  s.add_development_dependency 'rspec-rails'
+  s.add_development_dependency 'capybara'
   s.add_development_dependency 'sqlite3'
-  s.add_development_dependency 'delorean', '>= 0.2'
+  s.add_development_dependency 'delorean'
 end
