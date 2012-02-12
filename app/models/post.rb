@@ -12,11 +12,9 @@ class Post
     @date_str, @slug = File.basename(path).match(FILENAME_FORMAT).captures
   end
 
-=begin
   def to_partial_path
     'posts/post'
   end
-=end
 
   def to_param
     case permalink_format
