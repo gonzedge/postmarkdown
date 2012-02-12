@@ -13,7 +13,7 @@ module Postmarkdown
     end
 
     def check_date
-      if options.date && options.date !~ /^\d{4}-\d{2}-\d{2}-\d{4}$/
+      if options.date && options.date !~ /^\d{4}-\d{2}-\d{2}-\d{6}$/
         puts 'Invalid date - please use the following format: YYYY-MM-DD-HHMMSS, eg. 2011-01-01-100000.'
         exit
       end
