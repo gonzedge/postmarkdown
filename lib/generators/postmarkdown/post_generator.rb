@@ -19,10 +19,6 @@ module Postmarkdown
       end
     end
 
-    def check_other
-      raise 'test'
-    end
-
     def generate_post
       template 'example-post.markdown', "app/posts/#{publish_date}-#{slug.downcase}.markdown"
     end
