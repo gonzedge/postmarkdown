@@ -57,16 +57,28 @@ describe Post do
   end
 
   context 'with alternate markdown file extension' do
-    it 'should accept *.md files' do
+    it 'accepts *.md files' do
       lambda { test_post('2011-05-02-130000-md-file-extension.md').content }.should_not raise_error
     end
 
-    it 'should accept *.mkd files' do
+    it 'accepts *.mkd files' do
       lambda { test_post('2011-05-02-120000-mkd-file-extension.mkd').content }.should_not raise_error
     end
 
-    it 'should accept *.mdown files' do
+    it 'accepts *.mdown files' do
       lambda { test_post('2011-05-02-100000-mdown-file-extension.mdown').content }.should_not raise_error
+    end
+  end
+
+  describe '.find_each' do
+    before :each do
+      @block_called = false
+      Post.should_receive(:all).and_return ['1', '2']
+    end
+
+    it 'calls the passed block' do
+      Post.find_each{@block_called = true}
+      @block_called.should be_true
     end
   end
 end

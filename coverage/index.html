@@ -1,0 +1,4241 @@
+<!DOCTYPE html>
+<html xmlns='http://www.w3.org/1999/xhtml'>
+  <head>
+    <title>Code coverage for Postmarkdown</title>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <script src='./assets/0.5.3/jquery-1.6.2.min.js' type='text/javascript'></script>
+    <script src='./assets/0.5.3/jquery.dataTables.min.js' type='text/javascript'></script>   
+    <script src='./assets/0.5.3/fancybox/jquery.fancybox-1.3.1.pack.js' type='text/javascript'></script>   
+    <script src='./assets/0.5.3/jquery.timeago.js' type='text/javascript'></script>   
+    <script src='./assets/0.5.3/jquery.url.js' type='text/javascript'></script>   
+    <script src='./assets/0.5.3/highlight.pack.js' type='text/javascript'></script>  
+    <script src='./assets/0.5.3/app.js' type='text/javascript'></script>    
+    <link href='./assets/0.5.3/stylesheet.css' media='screen, projection, print' rel='stylesheet' type='text/css'>
+    <link href='./assets/0.5.3/highlight.css' media='screen, projection, print' rel='stylesheet' type='text/css'>
+    <link href='./assets/0.5.3/fancybox/jquery.fancybox-1.3.1.css' media='screen, projection, print' rel='stylesheet' type='text/css'>
+    <link href='./assets/0.5.3/smoothness/jquery-ui-1.8.4.custom.css' media='screen, projection, print' rel='stylesheet' type='text/css'>    
+    <link rel="shortcut icon" type="image/png" href="./assets/0.5.3/favicon_green.png" />
+    <link rel="icon" type="image/png" href="./assets/0.5.3/favicon.png" />
+  </head>
+  
+  <body>
+    <div id="loading">
+      <img src="./assets/0.5.3/loading.gif" alt="loading"/>
+    </div>
+    <div id="wrapper" style="display:none;">
+      <div class="timestamp">Generated <abbr class="timeago" title="2012-05-19T01:04:23-04:00">2012-05-19T01:04:23-04:00</abbr></div>
+      <ul class="group_tabs"></ul>
+
+      <div id="content">
+        <div class="file_list_container" id="AllFiles">
+  <h2>
+    <span class="group_name">All Files</span>
+    (<span class="covered_percent"><span class="green">96.43%</span></span>
+     covered at
+     <span class="covered_strength">
+       <span class="green">
+         4.71
+       </span>
+    </span> hits/line)
+  </h2>
+  <a name="AllFiles"></a>
+  <div>
+    <b>17</b> files in total.
+    <b>364</b> relevant lines. 
+    <span class="green"><b>351</b> lines covered</span> and
+    <span class="red"><b>13</b> lines missed </span>
+  </div>
+  <table class="file_list">
+    <thead>
+      <tr>
+        <th>File</th>
+        <th>% covered</th>
+        <th>Lines</th>
+        <th>Relevant Lines</th>
+        <th>Lines covered</th>
+        <th>Lines missed</th>
+        <th>Avg. Hits / Line</th>
+      </tr>
+    </thead>
+    <tbody>
+      
+      <tr>
+        <td class="strong"><a href="#3ac27d5eaa1adc128baba73ec8dde9442f49d3f9" class="src_link" title="app/controllers/application_controller.rb">app/controllers/application_controller.rb</a></td>
+        <td class="green strong">100.0 %</td>
+        <td>2</td>
+        <td>1</td>
+        <td>1</td>
+        <td>0</td>
+        <td>1.0</td>
+      </tr>
+      
+      <tr>
+        <td class="strong"><a href="#e42c50995525471fee1b4913aa4889006a7a8c82" class="src_link" title="app/controllers/posts_controller.rb">app/controllers/posts_controller.rb</a></td>
+        <td class="green strong">100.0 %</td>
+        <td>28</td>
+        <td>17</td>
+        <td>17</td>
+        <td>0</td>
+        <td>4.9</td>
+      </tr>
+      
+      <tr>
+        <td class="strong"><a href="#79a047069361f6de2495b87caea2eb68e098ebd7" class="src_link" title="app/models/post.rb">app/models/post.rb</a></td>
+        <td class="green strong">92.31 %</td>
+        <td>166</td>
+        <td>91</td>
+        <td>84</td>
+        <td>7</td>
+        <td>53.7</td>
+      </tr>
+      
+      <tr>
+        <td class="strong"><a href="#cbfba16a5a145e9f800f763b620ec784a42d365a" class="src_link" title="lib/postmarkdown.rb">lib/postmarkdown.rb</a></td>
+        <td class="green strong">100.0 %</td>
+        <td>5</td>
+        <td>5</td>
+        <td>5</td>
+        <td>0</td>
+        <td>1.0</td>
+      </tr>
+      
+      <tr>
+        <td class="strong"><a href="#20a2e1c851788a2ab44781acd8740a8419dac6bb" class="src_link" title="lib/postmarkdown/config.rb">lib/postmarkdown/config.rb</a></td>
+        <td class="green strong">100.0 %</td>
+        <td>22</td>
+        <td>14</td>
+        <td>14</td>
+        <td>0</td>
+        <td>1.0</td>
+      </tr>
+      
+      <tr>
+        <td class="strong"><a href="#737cf4375a272a71247393be65e8060667bb2a7c" class="src_link" title="lib/postmarkdown/engine.rb">lib/postmarkdown/engine.rb</a></td>
+        <td class="green strong">100.0 %</td>
+        <td>11</td>
+        <td>8</td>
+        <td>8</td>
+        <td>0</td>
+        <td>1.0</td>
+      </tr>
+      
+      <tr>
+        <td class="strong"><a href="#abf2e4406cb348a63d1147f2a7a47ab707e97185" class="src_link" title="lib/postmarkdown/railtie.rb">lib/postmarkdown/railtie.rb</a></td>
+        <td class="red strong">80.0 %</td>
+        <td>20</td>
+        <td>10</td>
+        <td>8</td>
+        <td>2</td>
+        <td>0.8</td>
+      </tr>
+      
+      <tr>
+        <td class="strong"><a href="#8f310d9ed6cd74ffa241274ebfd0437cf595a00d" class="src_link" title="lib/postmarkdown/routes.rb">lib/postmarkdown/routes.rb</a></td>
+        <td class="yellow strong">88.24 %</td>
+        <td>29</td>
+        <td>17</td>
+        <td>15</td>
+        <td>2</td>
+        <td>5.6</td>
+      </tr>
+      
+      <tr>
+        <td class="strong"><a href="#e8986b9e772d468692df9dc83ad3012802b6c3d2" class="src_link" title="lib/postmarkdown/util.rb">lib/postmarkdown/util.rb</a></td>
+        <td class="red strong">71.43 %</td>
+        <td>12</td>
+        <td>7</td>
+        <td>5</td>
+        <td>2</td>
+        <td>1.0</td>
+      </tr>
+      
+      <tr>
+        <td class="strong"><a href="#f485919b47a040d4a102a7e4f1c0735411b93178" class="src_link" title="lib/postmarkdown/version.rb">lib/postmarkdown/version.rb</a></td>
+        <td class="green strong">100.0 %</td>
+        <td>3</td>
+        <td>2</td>
+        <td>2</td>
+        <td>0</td>
+        <td>1.0</td>
+      </tr>
+      
+      <tr>
+        <td class="strong"><a href="#370ca515eb0fa50c853814b6cb07ae34cb7750d9" class="src_link" title="spec/acceptance/posts_spec.rb">spec/acceptance/posts_spec.rb</a></td>
+        <td class="green strong">100.0 %</td>
+        <td>167</td>
+        <td>96</td>
+        <td>96</td>
+        <td>0</td>
+        <td>1.7</td>
+      </tr>
+      
+      <tr>
+        <td class="strong"><a href="#5ea9ea558f4eb1c26db62d6daca8249c3c20a539" class="src_link" title="spec/internal/config/environments/test.rb">spec/internal/config/environments/test.rb</a></td>
+        <td class="green strong">100.0 %</td>
+        <td>9</td>
+        <td>8</td>
+        <td>8</td>
+        <td>0</td>
+        <td>1.0</td>
+      </tr>
+      
+      <tr>
+        <td class="strong"><a href="#3dd21805a6db744648cef10e630f3c0d6c9a8240" class="src_link" title="spec/internal/config/routes.rb">spec/internal/config/routes.rb</a></td>
+        <td class="green strong">100.0 %</td>
+        <td>3</td>
+        <td>2</td>
+        <td>2</td>
+        <td>0</td>
+        <td>1.0</td>
+      </tr>
+      
+      <tr>
+        <td class="strong"><a href="#dca14368960a29c812c7585e894b151af7531da6" class="src_link" title="spec/internal/db/schema.rb">spec/internal/db/schema.rb</a></td>
+        <td class="green strong">100.0 %</td>
+        <td>3</td>
+        <td>1</td>
+        <td>1</td>
+        <td>0</td>
+        <td>1.0</td>
+      </tr>
+      
+      <tr>
+        <td class="strong"><a href="#120f5ce0afd5d8abe1a3fdb80421231b791fa99c" class="src_link" title="spec/models/posts_spec.rb">spec/models/posts_spec.rb</a></td>
+        <td class="green strong">100.0 %</td>
+        <td>84</td>
+        <td>54</td>
+        <td>54</td>
+        <td>0</td>
+        <td>2.3</td>
+      </tr>
+      
+      <tr>
+        <td class="strong"><a href="#46bc8ea6a06f37d75d2981cac1c698259b93a02f" class="src_link" title="spec/requests/assets_spec.rb">spec/requests/assets_spec.rb</a></td>
+        <td class="green strong">100.0 %</td>
+        <td>16</td>
+        <td>10</td>
+        <td>10</td>
+        <td>0</td>
+        <td>1.0</td>
+      </tr>
+      
+      <tr>
+        <td class="strong"><a href="#5b5223d5b16c327e9bfae54a112b1356f5fd55dd" class="src_link" title="spec/requests/views_spec.rb">spec/requests/views_spec.rb</a></td>
+        <td class="green strong">100.0 %</td>
+        <td>34</td>
+        <td>21</td>
+        <td>21</td>
+        <td>0</td>
+        <td>1.0</td>
+      </tr>
+      
+    </tbody>
+  </table>
+</div>
+
+
+        
+      </div>
+    
+      <div id="footer">
+        Generated by <a href="http://github.com/colszowka/simplecov">simplecov</a> v0.6.4 
+        and simplecov-html v0.5.3<br/>
+        using RSpec
+      </div>
+    
+      <div class="source_files">
+      
+        <div class="source_table" id="3ac27d5eaa1adc128baba73ec8dde9442f49d3f9">
+  <div class="header">
+    <h3>app/controllers/application_controller.rb</h3>
+    <h4><span class="green">100.0 %</span> covered</h4>
+    <div>
+      <b>1</b> relevant lines. 
+      <span class="green"><b>1</b> lines covered</span> and
+      <span class="red"><b>0</b> lines missed.</span>
+    </div>
+  </div>
+  
+  <pre>
+    <ol>
+      
+        <li class="covered" data-hits="1" data-linenumber="1">
+          <span class="hits">1</span>
+          
+          <code class="ruby">class ApplicationController &lt; ActionController::Base</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="2">
+          
+          
+          <code class="ruby">end</code>
+        </li>
+      
+    </ol>
+  </pre>
+</div>
+      
+        <div class="source_table" id="e42c50995525471fee1b4913aa4889006a7a8c82">
+  <div class="header">
+    <h3>app/controllers/posts_controller.rb</h3>
+    <h4><span class="green">100.0 %</span> covered</h4>
+    <div>
+      <b>17</b> relevant lines. 
+      <span class="green"><b>17</b> lines covered</span> and
+      <span class="red"><b>0</b> lines missed.</span>
+    </div>
+  </div>
+  
+  <pre>
+    <ol>
+      
+        <li class="covered" data-hits="1" data-linenumber="1">
+          <span class="hits">1</span>
+          
+          <code class="ruby">class PostsController &lt; ApplicationController</code>
+        </li>
+      
+        <li class="covered" data-hits="21" data-linenumber="2">
+          <span class="hits">21</span>
+          
+          <code class="ruby">  layout lambda { |controller| Postmarkdown::Config.options[:use_theme] ? 'postmarkdown' : 'application' }</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="3">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="4">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  def show</code>
+        </li>
+      
+        <li class="covered" data-hits="4" data-linenumber="5">
+          <span class="hits">4</span>
+          
+          <code class="ruby">    resource</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="6">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="7">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="8">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  def feed</code>
+        </li>
+      
+        <li class="covered" data-hits="4" data-linenumber="9">
+          <span class="hits">4</span>
+          
+          <code class="ruby">    max_age = 4.hours</code>
+        </li>
+      
+        <li class="covered" data-hits="4" data-linenumber="10">
+          <span class="hits">4</span>
+          
+          <code class="ruby">    response.headers['Cache-Control'] = 'public, max-age=' + max_age.to_i.to_s</code>
+        </li>
+      
+        <li class="covered" data-hits="4" data-linenumber="11">
+          <span class="hits">4</span>
+          
+          <code class="ruby">    response.headers['Expires'] = max_age.from_now.httpdate</code>
+        </li>
+      
+        <li class="covered" data-hits="4" data-linenumber="12">
+          <span class="hits">4</span>
+          
+          <code class="ruby">    response.content_type = 'application/atom+xml'</code>
+        </li>
+      
+        <li class="covered" data-hits="4" data-linenumber="13">
+          <span class="hits">4</span>
+          
+          <code class="ruby">    fresh_when :last_modified =&gt; Post.feed_last_modified</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="14">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="15">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="16">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  protected</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="17">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="18">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  def resource</code>
+        </li>
+      
+        <li class="covered" data-hits="7" data-linenumber="19">
+          <span class="hits">7</span>
+          
+          <code class="ruby">    @resource ||= Post.find(params[:id])</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="20">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="21">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  helper_method :resource</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="22">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="23">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  def collection</code>
+        </li>
+      
+        <li class="covered" data-hits="23" data-linenumber="24">
+          <span class="hits">23</span>
+          
+          <code class="ruby">    @collection ||= Post.where(params.slice(:year, :month, :day))</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="25">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="26">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="27">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  helper_method :collection</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="28">
+          
+          
+          <code class="ruby">end</code>
+        </li>
+      
+    </ol>
+  </pre>
+</div>
+      
+        <div class="source_table" id="79a047069361f6de2495b87caea2eb68e098ebd7">
+  <div class="header">
+    <h3>app/models/post.rb</h3>
+    <h4><span class="green">92.31 %</span> covered</h4>
+    <div>
+      <b>91</b> relevant lines. 
+      <span class="green"><b>84</b> lines covered</span> and
+      <span class="red"><b>7</b> lines missed.</span>
+    </div>
+  </div>
+  
+  <pre>
+    <ol>
+      
+        <li class="covered" data-hits="1" data-linenumber="1">
+          <span class="hits">1</span>
+          
+          <code class="ruby">class Post</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="2">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  extend ActiveModel::Naming</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="3">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  include Gravtastic</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="4">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  is_gravtastic</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="5">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="6">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  attr_reader :slug</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="7">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  alias_method :id, :slug</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="8">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="9">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  FILENAME_FORMAT = /^(\d+-\d+-\d+-\d+)-(.*)(\.[^.]+)$/</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="10">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="11">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  def initialize(path)</code>
+        </li>
+      
+        <li class="covered" data-hits="125" data-linenumber="12">
+          <span class="hits">125</span>
+          
+          <code class="ruby">    @path = path</code>
+        </li>
+      
+        <li class="covered" data-hits="125" data-linenumber="13">
+          <span class="hits">125</span>
+          
+          <code class="ruby">    @date_str, @slug = File.basename(path).match(FILENAME_FORMAT).captures</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="14">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="15">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="16">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  def to_partial_path</code>
+        </li>
+      
+        <li class="covered" data-hits="3" data-linenumber="17">
+          <span class="hits">3</span>
+          
+          <code class="ruby">    'posts/post'</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="18">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="19">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="20">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  def to_param</code>
+        </li>
+      
+        <li class="covered" data-hits="139" data-linenumber="21">
+          <span class="hits">139</span>
+          
+          <code class="ruby">    case permalink_format</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="22">
+          
+          
+          <code class="ruby">      when :day then</code>
+        </li>
+      
+        <li class="covered" data-hits="139" data-linenumber="23">
+          <span class="hits">139</span>
+          
+          <code class="ruby">        &quot;%04d/%02d/%02d/%s&quot; % [year, month, day, slug]</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="24">
+          
+          
+          <code class="ruby">      when :month then</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="25">
+          
+          
+          <code class="ruby">        &quot;%04d/%02d/%s&quot; % [year, month, slug]</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="26">
+          
+          
+          <code class="ruby">      when :year then</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="27">
+          
+          
+          <code class="ruby">        &quot;%04d/%s&quot; % [year, slug]</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="28">
+          
+          
+          <code class="ruby">      when :slug then</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="29">
+          
+          
+          <code class="ruby">        slug</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="30">
+          
+          
+          <code class="ruby">    end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="31">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="32">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="33">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  def filename</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="34">
+          
+          
+          <code class="ruby">    @path.split(&quot;/&quot;).last</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="35">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="36">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="37">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  def permalink_format</code>
+        </li>
+      
+        <li class="covered" data-hits="139" data-linenumber="38">
+          <span class="hits">139</span>
+          
+          <code class="ruby">    Postmarkdown::Config.options[:permalink_format]</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="39">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="40">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="41">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  def to_key</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="42">
+          
+          
+          <code class="ruby">    [slug]</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="43">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="44">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="45">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  def metadata</code>
+        </li>
+      
+        <li class="covered" data-hits="329" data-linenumber="46">
+          <span class="hits">329</span>
+          
+          <code class="ruby">    load_content</code>
+        </li>
+      
+        <li class="covered" data-hits="329" data-linenumber="47">
+          <span class="hits">329</span>
+          
+          <code class="ruby">    @metadata</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="48">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="49">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="50">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  def content</code>
+        </li>
+      
+        <li class="covered" data-hits="52" data-linenumber="51">
+          <span class="hits">52</span>
+          
+          <code class="ruby">    load_content</code>
+        </li>
+      
+        <li class="covered" data-hits="52" data-linenumber="52">
+          <span class="hits">52</span>
+          
+          <code class="ruby">    @content</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="53">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="54">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="55">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  def title</code>
+        </li>
+      
+        <li class="covered" data-hits="57" data-linenumber="56">
+          <span class="hits">57</span>
+          
+          <code class="ruby">    metadata[:title] || slug.titleize</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="57">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="58">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="59">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  def author</code>
+        </li>
+      
+        <li class="covered" data-hits="61" data-linenumber="60">
+          <span class="hits">61</span>
+          
+          <code class="ruby">    metadata[:author]</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="61">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="62">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="63">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  def email</code>
+        </li>
+      
+        <li class="covered" data-hits="48" data-linenumber="64">
+          <span class="hits">48</span>
+          
+          <code class="ruby">    metadata[:email]</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="65">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="66">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="67">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  def date</code>
+        </li>
+      
+        <li class="covered" data-hits="755" data-linenumber="68">
+          <span class="hits">755</span>
+          
+          <code class="ruby">    @date ||= DateTime.strptime(metadata[:date] || @date_str, '%Y-%m-%d-%H%M%S')</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="69">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="70">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="71">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  delegate :year, :month, :day, :to =&gt; :date</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="72">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="73">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  def timestamp</code>
+        </li>
+      
+        <li class="covered" data-hits="179" data-linenumber="74">
+          <span class="hits">179</span>
+          
+          <code class="ruby">    date.to_time_in_current_zone</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="75">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="76">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="77">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  alias_method :last_modified, :timestamp</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="78">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="79">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  def visible?</code>
+        </li>
+      
+        <li class="covered" data-hits="100" data-linenumber="80">
+          <span class="hits">100</span>
+          
+          <code class="ruby">    timestamp &lt;= Time.zone.now</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="81">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="82">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="83">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  def to_s</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="84">
+          
+          
+          <code class="ruby">    &quot;#{title.inspect} (#{slug})&quot;</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="85">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="86">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="87">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  def content_html</code>
+        </li>
+      
+        <li class="covered" data-hits="47" data-linenumber="88">
+          <span class="hits">47</span>
+          
+          <code class="ruby">    RDiscount.new(content).to_html.html_safe</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="89">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="90">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="91">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  class Sanitizer &lt; HTML::WhiteListSanitizer</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="92">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    self.allowed_tags -= %w(img a)</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="93">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="94">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="95">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  TagHelper = Class.new.extend ActionView::Helpers::TagHelper</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="96">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="97">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  def summary_html</code>
+        </li>
+      
+        <li class="covered" data-hits="43" data-linenumber="98">
+          <span class="hits">43</span>
+          
+          <code class="ruby">    if metadata[:summary].present?</code>
+        </li>
+      
+        <li class="covered" data-hits="18" data-linenumber="99">
+          <span class="hits">18</span>
+          
+          <code class="ruby">      TagHelper.content_tag :p, metadata[:summary]</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="100">
+          
+          
+          <code class="ruby">    else</code>
+        </li>
+      
+        <li class="covered" data-hits="25" data-linenumber="101">
+          <span class="hits">25</span>
+          
+          <code class="ruby">      html = Sanitizer.new.sanitize(content_html)</code>
+        </li>
+      
+        <li class="covered" data-hits="25" data-linenumber="102">
+          <span class="hits">25</span>
+          
+          <code class="ruby">      doc = Nokogiri::HTML.fragment(html)</code>
+        </li>
+      
+        <li class="covered" data-hits="61" data-linenumber="103">
+          <span class="hits">61</span>
+          
+          <code class="ruby">      para = doc.search('p').detect { |p| p.text.present? }</code>
+        </li>
+      
+        <li class="covered" data-hits="25" data-linenumber="104">
+          <span class="hits">25</span>
+          
+          <code class="ruby">      para.try(:to_html).try(:html_safe)</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="105">
+          
+          
+          <code class="ruby">    end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="106">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="107">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="108">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  class &lt;&lt; self</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="109">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    def find_each(options = {})</code>
+        </li>
+      
+        <li class="covered" data-hits="3" data-linenumber="110">
+          <span class="hits">3</span>
+          
+          <code class="ruby">      all.each {|post| yield post}</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="111">
+          
+          
+          <code class="ruby">    end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="112">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="113">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    def all</code>
+        </li>
+      
+        <li class="covered" data-hits="29" data-linenumber="114">
+          <span class="hits">29</span>
+          
+          <code class="ruby">      file_extensions = Postmarkdown::Config.options[:markdown_file_extensions].join(',')</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="115">
+          
+          
+          <code class="ruby">      @@posts ||= Dir.glob(Rails.root + &quot;app/posts/*.{#{file_extensions}}&quot;).map do |filename|</code>
+        </li>
+      
+        <li class="covered" data-hits="100" data-linenumber="116">
+          <span class="hits">100</span>
+          
+          <code class="ruby">        Post.new filename</code>
+        </li>
+      
+        <li class="covered" data-hits="29" data-linenumber="117">
+          <span class="hits">29</span>
+          
+          <code class="ruby">      end.select(&amp;:visible?).sort_by(&amp;:date).reverse</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="118">
+          
+          
+          <code class="ruby">    end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="119">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="120">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    def where(conditions = {})</code>
+        </li>
+      
+        <li class="covered" data-hits="16" data-linenumber="121">
+          <span class="hits">16</span>
+          
+          <code class="ruby">      conditions = conditions.symbolize_keys</code>
+        </li>
+      
+        <li class="covered" data-hits="16" data-linenumber="122">
+          <span class="hits">16</span>
+          
+          <code class="ruby">      conditions.assert_valid_keys :year, :month, :day, :slug, :to_param</code>
+        </li>
+      
+        <li class="covered" data-hits="16" data-linenumber="123">
+          <span class="hits">16</span>
+          
+          <code class="ruby">      [:year, :month, :day].each do |key|</code>
+        </li>
+      
+        <li class="covered" data-hits="48" data-linenumber="124">
+          <span class="hits">48</span>
+          
+          <code class="ruby">        conditions[key] = conditions[key].to_i if conditions[key].present?</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="125">
+          
+          
+          <code class="ruby">      end</code>
+        </li>
+      
+        <li class="covered" data-hits="16" data-linenumber="126">
+          <span class="hits">16</span>
+          
+          <code class="ruby">      all.select do |post|</code>
+        </li>
+      
+        <li class="covered" data-hits="118" data-linenumber="127">
+          <span class="hits">118</span>
+          
+          <code class="ruby">        conditions.all? { |key, value| post.send(key) == value }</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="128">
+          
+          
+          <code class="ruby">      end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="129">
+          
+          
+          <code class="ruby">    end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="130">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="131">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    def find(id)</code>
+        </li>
+      
+        <li class="covered" data-hits="4" data-linenumber="132">
+          <span class="hits">4</span>
+          
+          <code class="ruby">      where(:to_param =&gt; id).first or raise ActiveRecord::RecordNotFound, &quot;Could not find post with ID #{id.inspect}&quot;</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="133">
+          
+          
+          <code class="ruby">    end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="134">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="135">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    def first</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="136">
+          
+          
+          <code class="ruby">      all.first</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="137">
+          
+          
+          <code class="ruby">    end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="138">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="139">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    def last</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="140">
+          <span class="hits">1</span>
+          
+          <code class="ruby">      all.last</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="141">
+          
+          
+          <code class="ruby">    end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="142">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="143">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    def feed</code>
+        </li>
+      
+        <li class="covered" data-hits="12" data-linenumber="144">
+          <span class="hits">12</span>
+          
+          <code class="ruby">      all.first(10)</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="145">
+          
+          
+          <code class="ruby">    end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="146">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="147">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    def feed_last_modified</code>
+        </li>
+      
+        <li class="covered" data-hits="8" data-linenumber="148">
+          <span class="hits">8</span>
+          
+          <code class="ruby">      feed.first.try(:last_modified) || Time.now.utc</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="149">
+          
+          
+          <code class="ruby">    end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="150">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="151">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    def reset!</code>
+        </li>
+      
+        <li class="covered" data-hits="19" data-linenumber="152">
+          <span class="hits">19</span>
+          
+          <code class="ruby">      @@posts = nil</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="153">
+          
+          
+          <code class="ruby">    end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="154">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="155">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="156">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  protected</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="157">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="158">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  def load_content</code>
+        </li>
+      
+        <li class="covered" data-hits="381" data-linenumber="159">
+          <span class="hits">381</span>
+          
+          <code class="ruby">    @content = File.read(@path)</code>
+        </li>
+      
+        <li class="covered" data-hits="381" data-linenumber="160">
+          <span class="hits">381</span>
+          
+          <code class="ruby">    if @content =~ /^(---\s*\n.*?\n?)^(---\s*$\n?)/m</code>
+        </li>
+      
+        <li class="covered" data-hits="197" data-linenumber="161">
+          <span class="hits">197</span>
+          
+          <code class="ruby">      @content = @content[($1.size + $2.size)..-1]</code>
+        </li>
+      
+        <li class="covered" data-hits="197" data-linenumber="162">
+          <span class="hits">197</span>
+          
+          <code class="ruby">      @metadata = YAML.load($1)</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="163">
+          
+          
+          <code class="ruby">    end</code>
+        </li>
+      
+        <li class="covered" data-hits="381" data-linenumber="164">
+          <span class="hits">381</span>
+          
+          <code class="ruby">    @metadata = (@metadata || {}).with_indifferent_access</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="165">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="166">
+          
+          
+          <code class="ruby">end</code>
+        </li>
+      
+    </ol>
+  </pre>
+</div>
+      
+        <div class="source_table" id="cbfba16a5a145e9f800f763b620ec784a42d365a">
+  <div class="header">
+    <h3>lib/postmarkdown.rb</h3>
+    <h4><span class="green">100.0 %</span> covered</h4>
+    <div>
+      <b>5</b> relevant lines. 
+      <span class="green"><b>5</b> lines covered</span> and
+      <span class="red"><b>0</b> lines missed.</span>
+    </div>
+  </div>
+  
+  <pre>
+    <ol>
+      
+        <li class="covered" data-hits="1" data-linenumber="1">
+          <span class="hits">1</span>
+          
+          <code class="ruby">require 'postmarkdown/engine'</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="2">
+          <span class="hits">1</span>
+          
+          <code class="ruby">require 'postmarkdown/config'</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="3">
+          <span class="hits">1</span>
+          
+          <code class="ruby">require 'postmarkdown/routes'</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="4">
+          <span class="hits">1</span>
+          
+          <code class="ruby">require 'postmarkdown/railtie'</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="5">
+          <span class="hits">1</span>
+          
+          <code class="ruby">require 'postmarkdown/util'</code>
+        </li>
+      
+    </ol>
+  </pre>
+</div>
+      
+        <div class="source_table" id="20a2e1c851788a2ab44781acd8740a8419dac6bb">
+  <div class="header">
+    <h3>lib/postmarkdown/config.rb</h3>
+    <h4><span class="green">100.0 %</span> covered</h4>
+    <div>
+      <b>14</b> relevant lines. 
+      <span class="green"><b>14</b> lines covered</span> and
+      <span class="red"><b>0</b> lines missed.</span>
+    </div>
+  </div>
+  
+  <pre>
+    <ol>
+      
+        <li class="covered" data-hits="1" data-linenumber="1">
+          <span class="hits">1</span>
+          
+          <code class="ruby">module Postmarkdown</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="2">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  module Config</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="3">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    extend self</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="4">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="5">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    @options = {}</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="6">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    attr_accessor :options</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="7">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="8">
+          
+          
+          <code class="ruby">end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="9">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="10">
+          <span class="hits">1</span>
+          
+          <code class="ruby">Postmarkdown::Config.options[:feed_title] = nil</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="11">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="12">
+          <span class="hits">1</span>
+          
+          <code class="ruby">Postmarkdown::Config.options[:permalink_format] = :day</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="13">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="14">
+          <span class="hits">1</span>
+          
+          <code class="ruby">Postmarkdown::Config.options[:use_theme] = false</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="15">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="16">
+          <span class="hits">1</span>
+          
+          <code class="ruby">Postmarkdown::Config.options[:permalink_regex] = {}</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="17">
+          <span class="hits">1</span>
+          
+          <code class="ruby">Postmarkdown::Config.options[:permalink_regex][:day]   = %r[\d{4}/\d{2}/\d{2}/[^/]+]</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="18">
+          <span class="hits">1</span>
+          
+          <code class="ruby">Postmarkdown::Config.options[:permalink_regex][:month] = %r[\d{4}/\d{2}/[^/]+]</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="19">
+          <span class="hits">1</span>
+          
+          <code class="ruby">Postmarkdown::Config.options[:permalink_regex][:year]  = %r[\d{4}/[^/]+]</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="20">
+          <span class="hits">1</span>
+          
+          <code class="ruby">Postmarkdown::Config.options[:permalink_regex][:slug]  = %r[[^/]+]</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="21">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="22">
+          <span class="hits">1</span>
+          
+          <code class="ruby">Postmarkdown::Config.options[:markdown_file_extensions] = %w(md mkd mdown markdown)</code>
+        </li>
+      
+    </ol>
+  </pre>
+</div>
+      
+        <div class="source_table" id="737cf4375a272a71247393be65e8060667bb2a7c">
+  <div class="header">
+    <h3>lib/postmarkdown/engine.rb</h3>
+    <h4><span class="green">100.0 %</span> covered</h4>
+    <div>
+      <b>8</b> relevant lines. 
+      <span class="green"><b>8</b> lines covered</span> and
+      <span class="red"><b>0</b> lines missed.</span>
+    </div>
+  </div>
+  
+  <pre>
+    <ol>
+      
+        <li class="covered" data-hits="1" data-linenumber="1">
+          <span class="hits">1</span>
+          
+          <code class="ruby">module Postmarkdown</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="2">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  require 'postmarkdown'</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="3">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  require 'rails'</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="4">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  require 'gravtastic'</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="5">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  require 'rdiscount'</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="6">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  require 'nokogiri'</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="7">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  require 'haml'</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="8">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="9">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  class Engine &lt; Rails::Engine</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="10">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="11">
+          
+          
+          <code class="ruby">end</code>
+        </li>
+      
+    </ol>
+  </pre>
+</div>
+      
+        <div class="source_table" id="abf2e4406cb348a63d1147f2a7a47ab707e97185">
+  <div class="header">
+    <h3>lib/postmarkdown/railtie.rb</h3>
+    <h4><span class="red">80.0 %</span> covered</h4>
+    <div>
+      <b>10</b> relevant lines. 
+      <span class="green"><b>8</b> lines covered</span> and
+      <span class="red"><b>2</b> lines missed.</span>
+    </div>
+  </div>
+  
+  <pre>
+    <ol>
+      
+        <li class="covered" data-hits="1" data-linenumber="1">
+          <span class="hits">1</span>
+          
+          <code class="ruby">module Postmarkdown</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="2">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  class Railtie &lt; Rails::Railtie</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="3">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    initializer :before_initialize do</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="4">
+          <span class="hits">1</span>
+          
+          <code class="ruby">      unless Rails.application.config.respond_to?(:assets) &amp;&amp; Rails.application.config.assets.enabled</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="5">
+          
+          
+          <code class="ruby">        require 'rack'</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="6">
+          
+          
+          <code class="ruby">        Rails.configuration.middleware.insert_before('Rack::Sendfile', 'Rack::Static',</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="7">
+          
+          
+          <code class="ruby">          :urls =&gt; ['/stylesheets/postmarkdown'],</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="8">
+          
+          
+          <code class="ruby">          :root =&gt; &quot;#{postmarkdown_root}/vendor/assets&quot;</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="9">
+          
+          
+          <code class="ruby">        )</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="10">
+          
+          
+          <code class="ruby">      end</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="11">
+          <span class="hits">1</span>
+          
+          <code class="ruby">      ActionController::Base.append_view_path(&quot;#{postmarkdown_root}/app/views&quot;)</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="12">
+          
+          
+          <code class="ruby">    end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="13">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="14">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    private</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="15">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="16">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    def postmarkdown_root</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="17">
+          <span class="hits">1</span>
+          
+          <code class="ruby">      File.expand_path(File.dirname(__FILE__) + '/../..')</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="18">
+          
+          
+          <code class="ruby">    end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="19">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="20">
+          
+          
+          <code class="ruby">end</code>
+        </li>
+      
+    </ol>
+  </pre>
+</div>
+      
+        <div class="source_table" id="8f310d9ed6cd74ffa241274ebfd0437cf595a00d">
+  <div class="header">
+    <h3>lib/postmarkdown/routes.rb</h3>
+    <h4><span class="yellow">88.24 %</span> covered</h4>
+    <div>
+      <b>17</b> relevant lines. 
+      <span class="green"><b>15</b> lines covered</span> and
+      <span class="red"><b>2</b> lines missed.</span>
+    </div>
+  </div>
+  
+  <pre>
+    <ol>
+      
+        <li class="covered" data-hits="1" data-linenumber="1">
+          <span class="hits">1</span>
+          
+          <code class="ruby">class ActionDispatch::Routing::Mapper</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="2">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  require 'postmarkdown/util'</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="3">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="4">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  def postmarkdown(options = {})</code>
+        </li>
+      
+        <li class="covered" data-hits="11" data-linenumber="5">
+          <span class="hits">11</span>
+          
+          <code class="ruby">    options.reverse_merge!({ :as =&gt; :posts, :permalink_format =&gt; :day })</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="6">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="11" data-linenumber="7">
+          <span class="hits">11</span>
+          
+          <code class="ruby">    get &quot;/#{options[:as]}(/:year(/:month(/:day)))&quot; =&gt; 'posts#index', :as =&gt; :posts, :constraints =&gt; { :year =&gt; /\d{4}/, :month =&gt; /\d{2}/, :day =&gt; /\d{2}/}</code>
+        </li>
+      
+        <li class="covered" data-hits="11" data-linenumber="8">
+          <span class="hits">11</span>
+          
+          <code class="ruby">    get &quot;/#{options[:as]}/feed&quot; =&gt; 'posts#feed', :as =&gt; :posts_feed, :format =&gt; :xml</code>
+        </li>
+      
+        <li class="covered" data-hits="11" data-linenumber="9">
+          <span class="hits">11</span>
+          
+          <code class="ruby">    get &quot;/#{options[:as]}/*id&quot; =&gt; 'posts#show', :as =&gt; :post, :constraints =&gt; { :id =&gt; postmarkdown_permalink_regex(options) }</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="10">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="11" data-linenumber="11">
+          <span class="hits">11</span>
+          
+          <code class="ruby">    postmarkdown_feed_title(options[:as])</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="12">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="13">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="14">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  private</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="15">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="16">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  def postmarkdown_permalink_regex(options)</code>
+        </li>
+      
+        <li class="covered" data-hits="11" data-linenumber="17">
+          <span class="hits">11</span>
+          
+          <code class="ruby">    Postmarkdown::Config.options[:permalink_format] = options[:permalink_format]</code>
+        </li>
+      
+        <li class="covered" data-hits="11" data-linenumber="18">
+          <span class="hits">11</span>
+          
+          <code class="ruby">    Postmarkdown::Config.options[:permalink_regex].try(:[], options[:permalink_format]) or raise_postmarkdown_permalink_error</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="19">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="20">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="21">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  def postmarkdown_feed_title(path)</code>
+        </li>
+      
+        <li class="covered" data-hits="11" data-linenumber="22">
+          <span class="hits">11</span>
+          
+          <code class="ruby">    Postmarkdown::Config.options[:feed_title] ||= &quot;#{Postmarkdown::Util.app_name} #{path.to_s.tr('/', '_').humanize.titleize}&quot;</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="23">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="24">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="25">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  def raise_postmarkdown_permalink_error</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="26">
+          
+          
+          <code class="ruby">    possible_options = Postmarkdown::Config.options[:permalink_regex].map { |k,v| k.inspect }.join(', ')</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="27">
+          
+          
+          <code class="ruby">    raise &quot;Postmarkdown Routing Error: Invalid :permalink_format option #{Postmarkdown::Config.options[:permalink_format].inspect} - must be one of the following: #{possible_options}&quot;</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="28">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="29">
+          
+          
+          <code class="ruby">end</code>
+        </li>
+      
+    </ol>
+  </pre>
+</div>
+      
+        <div class="source_table" id="e8986b9e772d468692df9dc83ad3012802b6c3d2">
+  <div class="header">
+    <h3>lib/postmarkdown/util.rb</h3>
+    <h4><span class="red">71.43 %</span> covered</h4>
+    <div>
+      <b>7</b> relevant lines. 
+      <span class="green"><b>5</b> lines covered</span> and
+      <span class="red"><b>2</b> lines missed.</span>
+    </div>
+  </div>
+  
+  <pre>
+    <ol>
+      
+        <li class="covered" data-hits="1" data-linenumber="1">
+          <span class="hits">1</span>
+          
+          <code class="ruby">module Postmarkdown</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="2">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  module Util</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="3">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    def self.app_name</code>
+        </li>
+      
+        <li class="covered" data-hits="3" data-linenumber="4">
+          <span class="hits">3</span>
+          
+          <code class="ruby">      Rails.application.class.name.split('::')[0..-2].join.titleize</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="5">
+          
+          
+          <code class="ruby">    end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="6">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="7">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    def self.git_config(name)</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="8">
+          
+          
+          <code class="ruby">      value = `git config --get #{name}`.chomp</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="9">
+          
+          
+          <code class="ruby">      value if $?.success?</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="10">
+          
+          
+          <code class="ruby">    end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="11">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="12">
+          
+          
+          <code class="ruby">end</code>
+        </li>
+      
+    </ol>
+  </pre>
+</div>
+      
+        <div class="source_table" id="f485919b47a040d4a102a7e4f1c0735411b93178">
+  <div class="header">
+    <h3>lib/postmarkdown/version.rb</h3>
+    <h4><span class="green">100.0 %</span> covered</h4>
+    <div>
+      <b>2</b> relevant lines. 
+      <span class="green"><b>2</b> lines covered</span> and
+      <span class="red"><b>0</b> lines missed.</span>
+    </div>
+  </div>
+  
+  <pre>
+    <ol>
+      
+        <li class="covered" data-hits="1" data-linenumber="1">
+          <span class="hits">1</span>
+          
+          <code class="ruby">module Postmarkdown</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="2">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  VERSION = '0.0.2'</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="3">
+          
+          
+          <code class="ruby">end</code>
+        </li>
+      
+    </ol>
+  </pre>
+</div>
+      
+        <div class="source_table" id="370ca515eb0fa50c853814b6cb07ae34cb7750d9">
+  <div class="header">
+    <h3>spec/acceptance/posts_spec.rb</h3>
+    <h4><span class="green">100.0 %</span> covered</h4>
+    <div>
+      <b>96</b> relevant lines. 
+      <span class="green"><b>96</b> lines covered</span> and
+      <span class="red"><b>0</b> lines missed.</span>
+    </div>
+  </div>
+  
+  <pre>
+    <ol>
+      
+        <li class="covered" data-hits="1" data-linenumber="1">
+          <span class="hits">1</span>
+          
+          <code class="ruby">require 'spec_helper'</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="2">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="3">
+          <span class="hits">1</span>
+          
+          <code class="ruby">describe 'Post views', :type =&gt; :request do</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="4">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  before do</code>
+        </li>
+      
+        <li class="covered" data-hits="19" data-linenumber="5">
+          <span class="hits">19</span>
+          
+          <code class="ruby">    time_travel_to '2011-05-01'</code>
+        </li>
+      
+        <li class="covered" data-hits="19" data-linenumber="6">
+          <span class="hits">19</span>
+          
+          <code class="ruby">    Post.reset!</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="7">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="8">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="20" data-linenumber="9">
+          <span class="hits">20</span>
+          
+          <code class="ruby">  after { back_to_the_present }</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="10">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="11">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  context 'Posts#index' do</code>
+        </li>
+      
+        <li class="covered" data-hits="4" data-linenumber="12">
+          <span class="hits">4</span>
+          
+          <code class="ruby">    before { visit posts_path }</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="13">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="14">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    it 'should show published posts' do</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="15">
+          
+          
+          <code class="ruby">      # 2011-05-01-full-metadata (published today)</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="16">
+          <span class="hits">1</span>
+          
+          <code class="ruby">      page.should have_content('Post with full metadata')                # title</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="17">
+          <span class="hits">1</span>
+          
+          <code class="ruby">      page.should have_content('Posted on 1 May 2011')                   # publish date</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="18">
+          <span class="hits">1</span>
+          
+          <code class="ruby">      page.should have_content('by John Smith')                          # author</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="19">
+          <span class="hits">1</span>
+          
+          <code class="ruby">      page.should have_content('This is another custom &amp; test summary.') # summary</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="20">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="21">
+          
+          
+          <code class="ruby">      # 2011-04-28-summary</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="22">
+          <span class="hits">1</span>
+          
+          <code class="ruby">      page.should have_content('A Test Post')                      # title</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="23">
+          <span class="hits">1</span>
+          
+          <code class="ruby">      page.should have_content('Posted on 28 April 2011')          # publish date</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="24">
+          <span class="hits">1</span>
+          
+          <code class="ruby">      page.should have_content('This is a custom &amp; test summary.') # summary</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="25">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="26">
+          
+          
+          <code class="ruby">      # 2011-04-28-image</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="27">
+          <span class="hits">1</span>
+          
+          <code class="ruby">      page.should have_content('Image')                   # title</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="28">
+          <span class="hits">1</span>
+          
+          <code class="ruby">      page.should have_content('Posted on 28 April 2011') # publish date</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="29">
+          <span class="hits">1</span>
+          
+          <code class="ruby">      page.should have_content('Image description.')      # summary</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="30">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="31">
+          
+          
+          <code class="ruby">      # 2011-04-01-first-post</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="32">
+          <span class="hits">1</span>
+          
+          <code class="ruby">      page.should have_content('First Post')                 # title</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="33">
+          <span class="hits">1</span>
+          
+          <code class="ruby">      page.should have_content('Posted on 1 April 2011')     # publish date</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="34">
+          <span class="hits">1</span>
+          
+          <code class="ruby">      page.should have_content('Lorem ipsum dolor sit amet') # part of summary</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="35">
+          
+          
+          <code class="ruby">    end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="36">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="37">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    it 'should not show unpublished posts' do</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="38">
+          
+          
+          <code class="ruby">      # 2015-02-13-custom-title (not published yet)</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="39">
+          <span class="hits">1</span>
+          
+          <code class="ruby">      page.should_not have_content('This is a custom title') # title</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="40">
+          <span class="hits">1</span>
+          
+          <code class="ruby">      page.should_not have_content('Content goes here.')     # summary</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="41">
+          
+          
+          <code class="ruby">    end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="42">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="43">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    it 'should have the correct number of posts' do</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="44">
+          <span class="hits">1</span>
+          
+          <code class="ruby">      all('section#posts article.post').size.should == 4</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="45">
+          
+          
+          <code class="ruby">    end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="46">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="47">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="48">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  context 'Posts#index with no posts' do</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="49">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    it 'should show a message' do</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="50">
+          <span class="hits">1</span>
+          
+          <code class="ruby">      time_travel_to '2010-05-01'</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="51">
+          <span class="hits">1</span>
+          
+          <code class="ruby">      visit posts_path</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="52">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="53">
+          <span class="hits">1</span>
+          
+          <code class="ruby">      page.should have_content('No posts found.')</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="54">
+          <span class="hits">1</span>
+          
+          <code class="ruby">      page.should_not have_content('First Post')</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="55">
+          
+          
+          <code class="ruby">    end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="56">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="57">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="58">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  context 'Posts#index with year' do</code>
+        </li>
+      
+        <li class="covered" data-hits="2" data-linenumber="59">
+          <span class="hits">2</span>
+          
+          <code class="ruby">    before { visit posts_path(:year =&gt; '2011') }</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="60">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="61">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    it 'should show posts inside the date range' do</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="62">
+          <span class="hits">1</span>
+          
+          <code class="ruby">      page.should have_content('Post with full metadata')</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="63">
+          <span class="hits">1</span>
+          
+          <code class="ruby">      page.should have_content('A Test Post')</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="64">
+          <span class="hits">1</span>
+          
+          <code class="ruby">      page.should have_content('Image')</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="65">
+          <span class="hits">1</span>
+          
+          <code class="ruby">      page.should have_content('First Post')</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="66">
+          
+          
+          <code class="ruby">    end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="67">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="68">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="69">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  context 'Posts#index with year and month' do</code>
+        </li>
+      
+        <li class="covered" data-hits="3" data-linenumber="70">
+          <span class="hits">3</span>
+          
+          <code class="ruby">    before { visit posts_path(:year =&gt; '2011', :month =&gt; '04') }</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="71">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="72">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    it 'should show posts inside the date range' do</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="73">
+          <span class="hits">1</span>
+          
+          <code class="ruby">      page.should have_content('A Test Post')</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="74">
+          <span class="hits">1</span>
+          
+          <code class="ruby">      page.should have_content('Image')</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="75">
+          <span class="hits">1</span>
+          
+          <code class="ruby">      page.should have_content('First Post')</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="76">
+          
+          
+          <code class="ruby">    end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="77">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="78">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    it 'should not show posts outside the date range' do</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="79">
+          <span class="hits">1</span>
+          
+          <code class="ruby">      page.should_not have_content('Post with full metadata')</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="80">
+          
+          
+          <code class="ruby">    end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="81">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="82">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="83">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  context 'Posts#index with year, month and day' do</code>
+        </li>
+      
+        <li class="covered" data-hits="3" data-linenumber="84">
+          <span class="hits">3</span>
+          
+          <code class="ruby">    before { visit posts_path(:year =&gt; '2011', :month =&gt; '04', :day =&gt; '01') }</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="85">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="86">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    it 'should show posts inside the date range' do</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="87">
+          <span class="hits">1</span>
+          
+          <code class="ruby">      page.should have_content('First Post')</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="88">
+          
+          
+          <code class="ruby">    end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="89">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="90">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    it 'should not show posts outside the date range' do</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="91">
+          <span class="hits">1</span>
+          
+          <code class="ruby">      page.should_not have_content('A Test Post')</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="92">
+          <span class="hits">1</span>
+          
+          <code class="ruby">      page.should_not have_content('Image')</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="93">
+          <span class="hits">1</span>
+          
+          <code class="ruby">      page.should_not have_content('Post with full metadata')</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="94">
+          
+          
+          <code class="ruby">    end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="95">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="96">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="97">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  context 'Posts#show' do</code>
+        </li>
+      
+        <li class="covered" data-hits="4" data-linenumber="98">
+          <span class="hits">4</span>
+          
+          <code class="ruby">    before { visit post_path('2011/05/01/full-metadata') }</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="99">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="100">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    it 'should have content' do</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="101">
+          <span class="hits">1</span>
+          
+          <code class="ruby">      page.should have_content('Post with full metadata') # title</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="102">
+          <span class="hits">1</span>
+          
+          <code class="ruby">      page.should have_content('Posted on 1 May 2011')    # publish date</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="103">
+          <span class="hits">1</span>
+          
+          <code class="ruby">      page.should have_content('by John Smith')           # author</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="104">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="105">
+          
+          
+          <code class="ruby">      # body</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="106">
+          <span class="hits">1</span>
+          
+          <code class="ruby">      page.should have_content('First paragraph of content.')</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="107">
+          <span class="hits">1</span>
+          
+          <code class="ruby">      page.should have_content('Second paragraph of content.')</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="108">
+          
+          
+          <code class="ruby">    end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="109">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="110">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    it 'should not show the summary' do</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="111">
+          <span class="hits">1</span>
+          
+          <code class="ruby">      page.should_not have_content('This is another custom &amp; test summary.')</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="112">
+          
+          
+          <code class="ruby">    end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="113">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="114">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    it 'should preserve whitespace on code blocks' do</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="115">
+          <span class="hits">1</span>
+          
+          <code class="ruby">      page.source.should match '&lt;pre&gt;&lt;code&gt;First line of code.&amp;#x000A;  Second line of code.&amp;#x000A;&lt;/code&gt;&lt;/pre&gt;'</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="116">
+          
+          
+          <code class="ruby">    end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="117">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="118">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="119">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  context 'Posts#feed' do</code>
+        </li>
+      
+        <li class="covered" data-hits="5" data-linenumber="120">
+          <span class="hits">5</span>
+          
+          <code class="ruby">    before { visit posts_feed_path }</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="121">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="122">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    it 'should be xml format type' do</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="123">
+          <span class="hits">1</span>
+          
+          <code class="ruby">      page.response_headers['Content-Type'].should == 'application/atom+xml; charset=utf-8'</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="124">
+          
+          
+          <code class="ruby">    end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="125">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="126">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    it 'should be valid xml' do</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="127">
+          <span class="hits">1</span>
+          
+          <code class="ruby">      lambda do</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="128">
+          <span class="hits">1</span>
+          
+          <code class="ruby">        Nokogiri::XML::Reader(page.source)</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="129">
+          
+          
+          <code class="ruby">      end.should_not raise_error</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="130">
+          
+          
+          <code class="ruby">    end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="131">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="132">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    it 'should contain the correct number of entries' do</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="133">
+          <span class="hits">1</span>
+          
+          <code class="ruby">       Nokogiri::XML(page.source).search('entry').size.should == 4</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="134">
+          
+          
+          <code class="ruby">    end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="135">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="136">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    it 'should contain an entry that is properly constructed' do</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="137">
+          <span class="hits">1</span>
+          
+          <code class="ruby">      entry = Nokogiri::XML(page.source).search('entry').first</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="138">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="139">
+          <span class="hits">1</span>
+          
+          <code class="ruby">      entry.search('title').text.should == 'Post with full metadata'</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="140">
+          <span class="hits">1</span>
+          
+          <code class="ruby">      entry.search('author').first.search('name').text.should == 'John Smith'</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="141">
+          <span class="hits">1</span>
+          
+          <code class="ruby">      entry.search('author').first.search('email').text.should == 'john.smith@example.com'</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="142">
+          <span class="hits">1</span>
+          
+          <code class="ruby">      entry.search('published').text.should == '2011-05-01T00:00:00Z'</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="143">
+          <span class="hits">1</span>
+          
+          <code class="ruby">      entry.search('content').text == &quot;\n      &lt;p&gt;First paragraph of content.&lt;/p&gt;\n\n&lt;p&gt;Second paragraph of content.&lt;/p&gt;\n\n    &quot;</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="144">
+          
+          
+          <code class="ruby">    end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="145">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="146">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="147">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  context 'Posts#show with invalid slug' do</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="148">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    it 'should raise an not found exception' do</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="149">
+          <span class="hits">1</span>
+          
+          <code class="ruby">      lambda do</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="150">
+          <span class="hits">1</span>
+          
+          <code class="ruby">        visit post_path('2011/05/01/invalid')</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="151">
+          
+          
+          <code class="ruby">      end.should raise_error(ActiveRecord::RecordNotFound)</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="152">
+          
+          
+          <code class="ruby">    end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="153">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="154">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="155">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  context 'theme' do</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="156">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    it 'should not use the built-in layout by default' do</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="157">
+          <span class="hits">1</span>
+          
+          <code class="ruby">      visit posts_path</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="158">
+          <span class="hits">1</span>
+          
+          <code class="ruby">      page.should_not have_content('A postmarkdown blog')</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="159">
+          
+          
+          <code class="ruby">    end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="160">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="161">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    it 'should use the built-in layout when the global option is set' do</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="162">
+          <span class="hits">1</span>
+          
+          <code class="ruby">      Postmarkdown::Config.options[:use_theme] = true</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="163">
+          <span class="hits">1</span>
+          
+          <code class="ruby">      visit posts_path</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="164">
+          <span class="hits">1</span>
+          
+          <code class="ruby">      page.should have_content('A postmarkdown blog')</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="165">
+          
+          
+          <code class="ruby">    end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="166">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="167">
+          
+          
+          <code class="ruby">end</code>
+        </li>
+      
+    </ol>
+  </pre>
+</div>
+      
+        <div class="source_table" id="5ea9ea558f4eb1c26db62d6daca8249c3c20a539">
+  <div class="header">
+    <h3>spec/internal/config/environments/test.rb</h3>
+    <h4><span class="green">100.0 %</span> covered</h4>
+    <div>
+      <b>8</b> relevant lines. 
+      <span class="green"><b>8</b> lines covered</span> and
+      <span class="red"><b>0</b> lines missed.</span>
+    </div>
+  </div>
+  
+  <pre>
+    <ol>
+      
+        <li class="covered" data-hits="1" data-linenumber="1">
+          <span class="hits">1</span>
+          
+          <code class="ruby">Rails.application.class.configure do</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="2">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  config.cache_classes = true</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="3">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  config.whiny_nils = true</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="4">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  config.consider_all_requests_local = true</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="5">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  config.action_controller.perform_caching = false</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="6">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  config.action_dispatch.show_exceptions = false</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="7">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  config.action_mailer.delivery_method = :test</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="8">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  config.active_support.deprecation = :stderr</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="9">
+          
+          
+          <code class="ruby">end</code>
+        </li>
+      
+    </ol>
+  </pre>
+</div>
+      
+        <div class="source_table" id="3dd21805a6db744648cef10e630f3c0d6c9a8240">
+  <div class="header">
+    <h3>spec/internal/config/routes.rb</h3>
+    <h4><span class="green">100.0 %</span> covered</h4>
+    <div>
+      <b>2</b> relevant lines. 
+      <span class="green"><b>2</b> lines covered</span> and
+      <span class="red"><b>0</b> lines missed.</span>
+    </div>
+  </div>
+  
+  <pre>
+    <ol>
+      
+        <li class="covered" data-hits="1" data-linenumber="1">
+          <span class="hits">1</span>
+          
+          <code class="ruby">Rails.application.routes.draw do</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="2">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  postmarkdown</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="3">
+          
+          
+          <code class="ruby">end</code>
+        </li>
+      
+    </ol>
+  </pre>
+</div>
+      
+        <div class="source_table" id="dca14368960a29c812c7585e894b151af7531da6">
+  <div class="header">
+    <h3>spec/internal/db/schema.rb</h3>
+    <h4><span class="green">100.0 %</span> covered</h4>
+    <div>
+      <b>1</b> relevant lines. 
+      <span class="green"><b>1</b> lines covered</span> and
+      <span class="red"><b>0</b> lines missed.</span>
+    </div>
+  </div>
+  
+  <pre>
+    <ol>
+      
+        <li class="covered" data-hits="1" data-linenumber="1">
+          <span class="hits">1</span>
+          
+          <code class="ruby">ActiveRecord::Schema.define do</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="2">
+          
+          
+          <code class="ruby">  #</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="3">
+          
+          
+          <code class="ruby">end</code>
+        </li>
+      
+    </ol>
+  </pre>
+</div>
+      
+        <div class="source_table" id="120f5ce0afd5d8abe1a3fdb80421231b791fa99c">
+  <div class="header">
+    <h3>spec/models/posts_spec.rb</h3>
+    <h4><span class="green">100.0 %</span> covered</h4>
+    <div>
+      <b>54</b> relevant lines. 
+      <span class="green"><b>54</b> lines covered</span> and
+      <span class="red"><b>0</b> lines missed.</span>
+    </div>
+  </div>
+  
+  <pre>
+    <ol>
+      
+        <li class="covered" data-hits="1" data-linenumber="1">
+          <span class="hits">1</span>
+          
+          <code class="ruby">require 'spec_helper'</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="2">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="3">
+          <span class="hits">1</span>
+          
+          <code class="ruby">describe Post do</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="4">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  def test_post(file_name)</code>
+        </li>
+      
+        <li class="covered" data-hits="25" data-linenumber="5">
+          <span class="hits">25</span>
+          
+          <code class="ruby">    Post.new(File.dirname(__FILE__) + &quot;/../support/data/posts/#{file_name}&quot;)</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="6">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="7">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="8">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  it 'should not initialise with bad filename' do</code>
+        </li>
+      
+        <li class="covered" data-hits="2" data-linenumber="9">
+          <span class="hits">2</span>
+          
+          <code class="ruby">    lambda { test_post 'missing-date-from-filename.markdown' }.should raise_error</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="10">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="11">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="12">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  context 'with missing file' do</code>
+        </li>
+      
+        <li class="covered" data-hits="2" data-linenumber="13">
+          <span class="hits">2</span>
+          
+          <code class="ruby">    subject { test_post '2000-01-01-no-such-file.markdown' }</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="14">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    it 'should error when trying to read content' do</code>
+        </li>
+      
+        <li class="covered" data-hits="2" data-linenumber="15">
+          <span class="hits">2</span>
+          
+          <code class="ruby">      lambda { subject.content }.should raise_error</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="16">
+          
+          
+          <code class="ruby">    end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="17">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="18">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="19">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  context 'with first post' do</code>
+        </li>
+      
+        <li class="covered" data-hits="11" data-linenumber="20">
+          <span class="hits">11</span>
+          
+          <code class="ruby">    subject { test_post '2011-04-01-160000-first-post.markdown' }</code>
+        </li>
+      
+        <li class="covered" data-hits="2" data-linenumber="21">
+          <span class="hits">2</span>
+          
+          <code class="ruby">    its(:slug) { should == 'first-post' }</code>
+        </li>
+      
+        <li class="covered" data-hits="2" data-linenumber="22">
+          <span class="hits">2</span>
+          
+          <code class="ruby">    its(:date) { should == DateTime.strptime('2011-04-01-160000', '%Y-%m-%d-%H%M%S') }</code>
+        </li>
+      
+        <li class="covered" data-hits="2" data-linenumber="23">
+          <span class="hits">2</span>
+          
+          <code class="ruby">    its(:title) { should == 'First Post' }</code>
+        </li>
+      
+        <li class="covered" data-hits="2" data-linenumber="24">
+          <span class="hits">2</span>
+          
+          <code class="ruby">    its(:content) { should =~ /\ALorem ipsum/ }</code>
+        </li>
+      
+        <li class="covered" data-hits="2" data-linenumber="25">
+          <span class="hits">2</span>
+          
+          <code class="ruby">    its(:content_html) { should =~ /^&lt;p&gt;Lorem ipsum/ }</code>
+        </li>
+      
+        <li class="covered" data-hits="2" data-linenumber="26">
+          <span class="hits">2</span>
+          
+          <code class="ruby">    its(:content_html) { should =~ /^&lt;p&gt;Duis aute irure dolor/ }</code>
+        </li>
+      
+        <li class="covered" data-hits="2" data-linenumber="27">
+          <span class="hits">2</span>
+          
+          <code class="ruby">    its(:content_html) { should be_html_safe }</code>
+        </li>
+      
+        <li class="covered" data-hits="2" data-linenumber="28">
+          <span class="hits">2</span>
+          
+          <code class="ruby">    its(:summary_html) { should =~ /^&lt;p&gt;Lorem ipsum/ }</code>
+        </li>
+      
+        <li class="covered" data-hits="2" data-linenumber="29">
+          <span class="hits">2</span>
+          
+          <code class="ruby">    its(:summary_html) { should_not =~ /^&lt;p&gt;Duis aute irure dolor/ }</code>
+        </li>
+      
+        <li class="covered" data-hits="2" data-linenumber="30">
+          <span class="hits">2</span>
+          
+          <code class="ruby">    its(:summary_html) { should be_html_safe }</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="31">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="32">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="33">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  context 'with custom title post' do</code>
+        </li>
+      
+        <li class="covered" data-hits="5" data-linenumber="34">
+          <span class="hits">5</span>
+          
+          <code class="ruby">    subject { test_post '2015-02-13-130000-custom-title.markdown' }</code>
+        </li>
+      
+        <li class="covered" data-hits="2" data-linenumber="35">
+          <span class="hits">2</span>
+          
+          <code class="ruby">    its(:slug) { should == 'custom-title' }</code>
+        </li>
+      
+        <li class="covered" data-hits="2" data-linenumber="36">
+          <span class="hits">2</span>
+          
+          <code class="ruby">    its(:date) { should == DateTime.strptime('2015-02-13-130000', '%Y-%m-%d-%H%M%S') }</code>
+        </li>
+      
+        <li class="covered" data-hits="2" data-linenumber="37">
+          <span class="hits">2</span>
+          
+          <code class="ruby">    its(:title) { should == 'This is a custom title' }</code>
+        </li>
+      
+        <li class="covered" data-hits="2" data-linenumber="38">
+          <span class="hits">2</span>
+          
+          <code class="ruby">    its(:content) { should == &quot;Content goes here.\n&quot; }</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="39">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="40">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="41">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  context 'with author' do</code>
+        </li>
+      
+        <li class="covered" data-hits="3" data-linenumber="42">
+          <span class="hits">3</span>
+          
+          <code class="ruby">    subject { test_post '2011-05-01-123456-full-metadata.markdown' }</code>
+        </li>
+      
+        <li class="covered" data-hits="2" data-linenumber="43">
+          <span class="hits">2</span>
+          
+          <code class="ruby">    its(:author) { should == 'John Smith' }</code>
+        </li>
+      
+        <li class="covered" data-hits="2" data-linenumber="44">
+          <span class="hits">2</span>
+          
+          <code class="ruby">    its(:email) { should == 'john.smith@example.com' }</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="45">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="46">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="47">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  context 'with image post' do</code>
+        </li>
+      
+        <li class="covered" data-hits="3" data-linenumber="48">
+          <span class="hits">3</span>
+          
+          <code class="ruby">    subject { test_post '2011-04-28-133445-image.markdown' }</code>
+        </li>
+      
+        <li class="covered" data-hits="2" data-linenumber="49">
+          <span class="hits">2</span>
+          
+          <code class="ruby">    its(:summary_html) { should =~ /^&lt;p&gt;Image description/ }</code>
+        </li>
+      
+        <li class="covered" data-hits="2" data-linenumber="50">
+          <span class="hits">2</span>
+          
+          <code class="ruby">    its(:summary_html) { should be_html_safe }</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="51">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="52">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="53">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  context 'with custom summary post' do</code>
+        </li>
+      
+        <li class="covered" data-hits="3" data-linenumber="54">
+          <span class="hits">3</span>
+          
+          <code class="ruby">    subject { test_post '2011-04-28-153323-summary.markdown' }</code>
+        </li>
+      
+        <li class="covered" data-hits="2" data-linenumber="55">
+          <span class="hits">2</span>
+          
+          <code class="ruby">    its(:summary_html) { should == '&lt;p&gt;This is a custom &amp;amp; test summary.&lt;/p&gt;' }</code>
+        </li>
+      
+        <li class="covered" data-hits="2" data-linenumber="56">
+          <span class="hits">2</span>
+          
+          <code class="ruby">    its(:summary_html) { should be_html_safe }</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="57">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="58">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="59">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  context 'with alternate markdown file extension' do</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="60">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    it 'accepts *.md files' do</code>
+        </li>
+      
+        <li class="covered" data-hits="2" data-linenumber="61">
+          <span class="hits">2</span>
+          
+          <code class="ruby">      lambda { test_post('2011-05-02-130000-md-file-extension.md').content }.should_not raise_error</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="62">
+          
+          
+          <code class="ruby">    end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="63">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="64">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    it 'accepts *.mkd files' do</code>
+        </li>
+      
+        <li class="covered" data-hits="2" data-linenumber="65">
+          <span class="hits">2</span>
+          
+          <code class="ruby">      lambda { test_post('2011-05-02-120000-mkd-file-extension.mkd').content }.should_not raise_error</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="66">
+          
+          
+          <code class="ruby">    end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="67">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="68">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    it 'accepts *.mdown files' do</code>
+        </li>
+      
+        <li class="covered" data-hits="2" data-linenumber="69">
+          <span class="hits">2</span>
+          
+          <code class="ruby">      lambda { test_post('2011-05-02-100000-mdown-file-extension.mdown').content }.should_not raise_error</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="70">
+          
+          
+          <code class="ruby">    end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="71">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="72">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="73">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  describe '.find_each' do</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="74">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    before :each do</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="75">
+          <span class="hits">1</span>
+          
+          <code class="ruby">      @block_called = false</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="76">
+          <span class="hits">1</span>
+          
+          <code class="ruby">      Post.should_receive(:all).and_return ['1', '2']</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="77">
+          
+          
+          <code class="ruby">    end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="78">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="79">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    it 'calls the passed block' do</code>
+        </li>
+      
+        <li class="covered" data-hits="3" data-linenumber="80">
+          <span class="hits">3</span>
+          
+          <code class="ruby">      Post.find_each{@block_called = true}</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="81">
+          <span class="hits">1</span>
+          
+          <code class="ruby">      @block_called.should be_true</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="82">
+          
+          
+          <code class="ruby">    end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="83">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="84">
+          
+          
+          <code class="ruby">end</code>
+        </li>
+      
+    </ol>
+  </pre>
+</div>
+      
+        <div class="source_table" id="46bc8ea6a06f37d75d2981cac1c698259b93a02f">
+  <div class="header">
+    <h3>spec/requests/assets_spec.rb</h3>
+    <h4><span class="green">100.0 %</span> covered</h4>
+    <div>
+      <b>10</b> relevant lines. 
+      <span class="green"><b>10</b> lines covered</span> and
+      <span class="red"><b>0</b> lines missed.</span>
+    </div>
+  </div>
+  
+  <pre>
+    <ol>
+      
+        <li class="covered" data-hits="1" data-linenumber="1">
+          <span class="hits">1</span>
+          
+          <code class="ruby">require 'spec_helper'</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="2">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="3">
+          <span class="hits">1</span>
+          
+          <code class="ruby">describe 'stylesheet', :type =&gt; :request do</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="4">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  include RSpec::Rails::HelperExampleGroup</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="5">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="6">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  def stylesheet_path</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="7">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    html = helper.stylesheet_link_tag 'postmarkdown/postmarkdown'</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="8">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    Nokogiri::HTML.fragment(html).at('link')[:href]</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="9">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="10">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="11">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  it 'should be served' do</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="12">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    visit stylesheet_path</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="13">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    page.source.should match /font-family:/</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="14">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    page.source.should match /}\s*\z/</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="15">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="16">
+          
+          
+          <code class="ruby">end</code>
+        </li>
+      
+    </ol>
+  </pre>
+</div>
+      
+        <div class="source_table" id="5b5223d5b16c327e9bfae54a112b1356f5fd55dd">
+  <div class="header">
+    <h3>spec/requests/views_spec.rb</h3>
+    <h4><span class="green">100.0 %</span> covered</h4>
+    <div>
+      <b>21</b> relevant lines. 
+      <span class="green"><b>21</b> lines covered</span> and
+      <span class="red"><b>0</b> lines missed.</span>
+    </div>
+  </div>
+  
+  <pre>
+    <ol>
+      
+        <li class="covered" data-hits="1" data-linenumber="1">
+          <span class="hits">1</span>
+          
+          <code class="ruby">require 'spec_helper'</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="2">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="3">
+          <span class="hits">1</span>
+          
+          <code class="ruby">describe 'views', :type =&gt; :request do</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="4">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  context 'without application index view' do</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="5">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    it 'should use internal view' do</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="6">
+          <span class="hits">1</span>
+          
+          <code class="ruby">      visit '/posts'</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="7">
+          <span class="hits">1</span>
+          
+          <code class="ruby">      page.should have_css 'section#posts'</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="8">
+          <span class="hits">1</span>
+          
+          <code class="ruby">      page.should_not have_content 'test application view'</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="9">
+          
+          
+          <code class="ruby">    end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="10">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="11">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="12">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  context 'with application index view' do</code>
+        </li>
+      
+        <li class="covered" data-hits="2" data-linenumber="13">
+          <span class="hits">2</span>
+          
+          <code class="ruby">    let(:view_path) { Rails.root + 'app/views/posts/index.html.haml' }</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="14">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="15">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    before do</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="16">
+          <span class="hits">1</span>
+          
+          <code class="ruby">      ApplicationController.view_paths.each(&amp;:clear_cache)</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="17">
+          <span class="hits">1</span>
+          
+          <code class="ruby">      FileUtils.mkdir_p File.dirname(view_path)</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="18">
+          <span class="hits">1</span>
+          
+          <code class="ruby">      File.open view_path, 'w' do |io|</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="19">
+          <span class="hits">1</span>
+          
+          <code class="ruby">        io.puts 'This is a test application view.'</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="20">
+          
+          
+          <code class="ruby">      end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="21">
+          
+          
+          <code class="ruby">    end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="22">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="23">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    after do</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="24">
+          <span class="hits">1</span>
+          
+          <code class="ruby">      File.unlink view_path</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="25">
+          <span class="hits">1</span>
+          
+          <code class="ruby">      ApplicationController.view_paths.each(&amp;:clear_cache)</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="26">
+          
+          
+          <code class="ruby">    end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="27">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="28">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    it 'should not use internal view' do</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="29">
+          <span class="hits">1</span>
+          
+          <code class="ruby">      visit '/posts'</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="30">
+          <span class="hits">1</span>
+          
+          <code class="ruby">      page.should have_content 'test application view'</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="31">
+          <span class="hits">1</span>
+          
+          <code class="ruby">      page.should_not have_css 'section#posts'</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="32">
+          
+          
+          <code class="ruby">    end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="33">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="34">
+          
+          
+          <code class="ruby">end</code>
+        </li>
+      
+    </ol>
+  </pre>
+</div>
+      
+      </div>
+    </div>
+  </body>
+</html>

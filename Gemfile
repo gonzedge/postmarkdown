@@ -2,4 +2,4 @@ source 'http://rubygems.org'
 
 gemspec
 
-gem 'ruby-debug19', :require => false
+gem 'simplecov', :require => false, :group => :test

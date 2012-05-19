@@ -1,4 +1,5 @@
 class Post
+  extend ActiveModel::Naming
   include Gravtastic
   is_gravtastic
 
@@ -105,6 +106,10 @@ class Post
   end
 
   class << self
+    def find_each(options = {})
+      all.each {|post| yield post}
+    end
+
     def all
       file_extensions = Postmarkdown::Config.options[:markdown_file_extensions].join(',')
       @@posts ||= Dir.glob(Rails.root + "app/posts/*.{#{file_extensions}}").map do |filename|
