@@ -1,3 +1,5 @@
+require 'active_record/errors'
+
 class Post
   extend ActiveModel::Naming
   include Gravtastic
@@ -85,8 +87,31 @@ class Post
   end
 
   def content_html
-    RDiscount.new(content).to_html.html_safe
+    renderer = HTMLwithPygments.new(hard_wrap: true)
+    options = {
+      autolink: true,
+      no_intra_emphasis: true,
+      fenced_code_blocks: true,
+      lax_html_blocks: true,
+      strikethrough: true,
+      superscript: true
+    }
+    Redcarpet::Markdown.new(renderer, options).render(content).html_safe
   end
+
+  require 'net/http'
+  require 'uri'
+  class HTMLwithPygments < Redcarpet::Render::HTML
+    PYGMENTIZE_URL = URI.parse 'http://pygmentize.herokuapp.com'
+
+    def block_code(code, language)
+      sha = Digest::SHA1.hexdigest code
+      Rails.cache.fetch ['code', language, sha].join('-') do
+        Net::HTTP.post_form(PYGMENTIZE_URL, lang: language, code: code).body
+      end
+    end
+  end
+
 
   class Sanitizer < HTML::WhiteListSanitizer
     self.allowed_tags -= %w(img a)
