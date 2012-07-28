@@ -87,7 +87,7 @@ class Post
   end
 
   def content_html
-    renderer = HTMLwithPygments.new(hard_wrap: true, filter_html: true)
+    renderer = HTMLwithPygments.new(hard_wrap: true)
     options = {
       autolink: true,
       no_intra_emphasis: true,
