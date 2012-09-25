@@ -107,7 +107,7 @@ class Post
     def block_code(code, language)
       sha = Digest::SHA1.hexdigest code
       Rails.cache.fetch ['code', language, sha].join('-') do
-        Net::HTTP.post_form(PYGMENTIZE_URL, lang: language, code: code).body
+         Pygmentize.process(code, language)
       end
     end
   end
